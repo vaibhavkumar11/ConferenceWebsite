@@ -312,7 +312,12 @@ button:focus,
  *-------------------*/
 
 .jumbotron {
-  background-image: linear-gradient(to bottom, rgba(54, 209, 220, 0.574), rgba(91, 135, 229, 0.571)) , url("../img/india-gate.jpg");
+  background-image: linear-gradient(
+      to bottom,
+      rgba(54, 209, 220, 0.574),
+      rgba(91, 135, 229, 0.571)
+    ),
+    url("../img/india-gate.jpg");
   opacity: 0.8;
   background-size: cover;
   padding: 0;
@@ -329,7 +334,7 @@ button:focus,
 }
 
 @media (width: 768px) {
-  .jumbotron{
+  .jumbotron {
     clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
   }
 }
@@ -399,15 +404,14 @@ button:focus,
 /*---------------------------
  * Section Title
  *---------------------------*/
-h
- 
- .section-title {
+
+.section-title {
   margin-bottom: 60px;
   text-align: center;
 }
 
 .section-title h1 {
-  margin-bottom: 5px;
+  margin-bottom: 35px;
 }
 
 .section-title p {
@@ -437,10 +441,10 @@ h
  * Team Section
  *-----------------------------------------------*/
 
-.team{
-    color: #000;
-    font-weight: 300;
-    background: #969595;
+.team {
+  color: #000;
+  font-weight: 300;
+  background: #eeeeee;
 }
 
 .team .thumbnail {
@@ -499,6 +503,120 @@ h
 
 .team .social-links li a:hover {
   color: #333;
+}
+
+#section-call {
+  background-color: #fff;
+}
+
+/* -------------------------
+ * Call for Speakers
+ * -------------------------*/
+
+.important-dates {
+  text-align: center;
+  margin-bottom: 45px;
+  margin-top: 40px;
+}
+
+.main-timeline-section {
+  position: relative;
+  width: 100%;
+  margin: auto;
+}
+.main-timeline-section .timeline-start,
+.main-timeline-section .timeline-end {
+  background: #0093d1;
+  border-radius: 100px;
+  margin: 0 auto;
+  width: 30px;
+  height: 30px;
+}
+.main-timeline-section .conference-center-line {
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  margin-left: -2px;
+  background: #0093d1;
+  
+}
+.timeline-article {
+  width: 100%;
+  position: relative;
+  margin: 40px 0px;
+  min-height: 135px;
+  z-index: 0;
+}
+.timeline-article .content-date {
+  position: absolute;
+  top: 33%;
+  left: 50%;
+  font-size: 18px;
+  margin-left: -150px;
+  transform: translateY(50%);
+}
+.timeline-article .meta-date {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  transform: translateY(-50%);
+  margin-left: -11px;
+  border-radius: 100%;
+  background: #fff;
+  border: 1px solid #0093d1;
+}
+.timeline-article .content-box {
+  position: absolute;
+  box-shadow: 2px 2px 4px 0px #c1c1c1;
+  border: 1px solid #0093d1;
+  border-radius: 5px;
+  background-color: #fff;
+  width: 40%;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 8px;
+  left: 50%;
+  margin-left: 50px;
+}
+.content-left-container .content-box {
+  left: 5%;
+  margin-left: 0px;
+}
+.content-left-container .content-date {
+  margin-left: 50px;
+}
+.content-right-container .content-box:before {
+  content: " ";
+  position: absolute;
+  left: -10px;
+  top: 40%;
+  transform: translateX(-50%);
+  border: 10px solid transparent;
+  border-right-color: #0093d1;
+  display: block;
+}
+.content-left-container .content-box:before {
+  content: " ";
+  position: absolute;
+  top: 40%;
+  right: -30px;
+  transform: translateX(-50%);
+  border: 10px solid transparent;
+  border-left-color: #0093d1;
+}
+
+@media (max-width: 460px) {
+  .timeline-article.content-left-container .content-box {
+    left: -10px;
+  }
+  .timeline-article .content-box p {
+    height: 100px;
+    overflow: hidden;
+  }
 }
 
 /* --------------------------
