@@ -406,7 +406,7 @@ button:focus,
  *---------------------------*/
 
 .section-title {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   text-align: center;
 }
 
@@ -444,7 +444,7 @@ button:focus,
 .team {
   color: #000;
   font-weight: 300;
-  background: #eeeeee;
+  background: #f8f9fa;
 }
 
 .team .thumbnail {
@@ -540,7 +540,6 @@ button:focus,
   left: 50%;
   margin-left: -2px;
   background: #0093d1;
-  
 }
 .timeline-article {
   width: 100%;
@@ -619,188 +618,46 @@ button:focus,
   }
 }
 
-/* --------------------------
- * Agenda
- *---------------------------*/
-.section-ajenda .session {
-  padding: 15px 0;
-  border-left: 1px solid #eeeeee;
-  margin-bottom: 40px;
+/* -------------------------
+ * Registration fees
+ * -------------------------*/
+
+.fees {
+  color: #000;
+  font-weight: 300;
+  background: #f8f9fa;
 }
 
-.section-ajenda .session time {
-  padding: 5px 25px 15px;
-  border-bottom: 1px solid #eeeeee;
-  display: inline-block;
+/* -------------------------
+ * About
+ * -------------------------*/
+
+.about {
+  background-color: #fff;
 }
 
-.section-ajenda .session h2 {
-  margin: 20px 0 0 20px;
+/* -------------------------
+ * Venue
+ * -------------------------*/
+.venue {
+  color: #000;
+  font-weight: 300;
+  background: #f8f9fa;
 }
 
-.section-ajenda .session h3 {
-  margin: 20px 0 20px 20px;
-  font-size: 20px;
-  text-transform: uppercase;
-}
-
-.section-ajenda .session h3 span {
-  font-size: 14px;
-  display: block;
-  line-height: 1;
-}
-
-/* --------------------------
- * Pricing Table
- *---------------------------*/
-
-.pricing-section .pricing-table-default {
-  border: 1px solid #f1f1f1;
-  background: #ffffff;
-  padding-bottom: 40px;
-}
-
-@media (max-width: 766px) {
-  .pricing-section .pricing-table-default {
-    margin-bottom: 30px;
-  }
-}
-
-.pricing-section .pricing-head h3 {
+.venue address {
   font-size: 15px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #ffffff;
-  padding: 14px 40px;
-  margin: 0;
-  background-color: #0e1555;
+  color: #888888;
+  line-height: 1.8em;
 }
 
-.pricing-section .pricing-head .price {
-  display: block;
-  font-size: 60px;
-  line-height: 60px;
-  font-weight: bold;
-  padding: 43px 0 0;
+.venue address strong {
+  color: #353e55;
 }
 
-.pricing-section .pricing-head .price sup {
-  font-size: 24px;
-  font-weight: bold;
-  vertical-align: super;
-  top: 0;
-}
-
-.pricing-section .pricing-detail {
-  margin: 0 50px 25px 50px;
-}
-
-.pricing-section .pricing-detail p {
-  margin: 0;
-}
-
-/*pricing list*/
-
-.pricing-section .pricing-list li {
-  display: block;
-  padding: 8px 0;
-}
-
-.pricing-section .pricing-list li i {
-  margin-right: 17px;
-}
-
-.pricing-section .pricing-list li:first-child {
-  padding-top: 25px;
-}
-
-.pricing-section .pricing-list li:last-child {
-  padding: 12px 0 0;
-}
-
-.pricing-section .pricing-detail .pink-i li {
-  position: relative;
-}
-
-/* --------------------------
- * Client Logo 
- *---------------------------*/
-
-.client-logo a img {
-  width: 100%;
-  opacity: 1;
-  -webkit-transition: all 0.8s ease 0s;
-  -moz-transition: all 0.8s ease 0s;
-  -o-transition: all 0.8s ease 0s;
-  transition: all 0.8s ease 0s;
-}
-
-.client-logo a:hover img {
-  opacity: 0.5;
-}
-
-@media (max-width: 992px) {
-  .client-logo .section-margin {
-    margin-bottom: 30px;
-  }
-}
-
-/* ------------------
- * Google Map
- * ------------------*/
-
-#googleMap {
-  height: 320px;
-  border: 5px solid #ffffff;
-  margin-bottom: 100px;
-}
-
-/* ---------------------------
- * Subscribe Form
- * --------------------------- */
-
-.subscribe-form {
-  text-align: center;
-}
-
-/*-------------------
- * Form Style
- *-------------------*/
-
-.form-control {
-  height: 46px;
-  padding: 0 20px;
-  font-size: 14px;
-  line-height: 46px;
-  color: #969595;
-  border: 1px solid #f1f1f1;
-  border-radius: 0;
-  box-shadow: none;
-}
-
-.form-control.input-lg {
-  height: 60px;
-  padding: 0 20px;
-  font-size: 18px;
-  line-height: 60px;
-  color: #969595;
-  border: 1px solid #f1f1f1;
-  border-radius: 0;
-  box-shadow: none;
-  min-width: 400px;
-}
-
-.form-control:focus,
-.form-control:active {
-  box-shadow: none;
-  border-color: #fd367e;
-}
-
-@media (max-width: 600px) {
-  .form-control.input-lg {
-    min-width: auto;
-    display: block;
-  }
+.map{
+  margin-bottom: 20px;
+  padding: 0;
 }
 
 /* --------------------------------------------
